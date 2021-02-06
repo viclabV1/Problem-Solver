@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Problem Solver</string>
+    <string name="app_greeting">Welcome to the Problem Solver</string>
+    <string name="app_instruction">Please choose a problem:</string>
+    <string name="fwgc_button">FWGC</string>
+    <string name="eightPuzzle_button">8 Puzzle</string>
+    <string name="beginProblem_button">Begin Problem</string>
+    <string name="beginFifteen_button">15 Puzzle</string>
+
+    <string name="move_count">Move Count: 0</string>
+    <string name="moves">Moves:</string>
+    <string name="reset">Reset</string>
+    <string name="solve">Solve</string>
+    <string name="message">This is where messages go</string>
+    <string name="benchmark">Benchmark:</string>
+    <string name="statistics">Statistics:</string>
+    <string name="next_move">Next</string>
+
+    <string name="fwgc_greeting">Welcome to the FWGC Problem</string>
+    <string name="fwgc_instructions">A farmer and his wolf, goat, and cabbage come to the edge of a river they wish to cross. There is a boat at the rivers edge that only the farmer can row. The farmer can take at most one other object besides himself on a crossing, but if the wolf is ever left with the goat, the wolf will eat the goat; similarly, if the goat is left with the cabbage, the goat will eat the cabbage. Devise a sequence of crossings of the river so that all four characters arrive safely on the other side.</string>
+    <string name="fwgc_start">Begin FWGC Problem</string>
+    <string name="fwgc_currentstate">Current State</string>
+    <string name="fwgc_initialstate">Initial State</string>
+    <string name="fwgc_finalstate">Final State</string>
+    <string name="fwgc_initial">\t\t  |  |  \t\n\tF |  |  \t\n\tW |  |  \t\n\tG |  |  \t\n\tC |  |  \t\n\t\t  |  |  </string>
+    <string name="fwgc_final"> \t  |  |  \t\n\t  |  | F\t\n\t  |  | W\t\n\t  |  | G\t\n\t  |  | C\n\t  |  |  \t</string>
+    <string name="fwgc_header">FWGC Problem</string>
+
+    <string name="eight_greeting">Welcome to the 8-Puzzle Problem</string>
+    <string name="eight_instructions">You are given a board in which numbered tiles can slide around. There is one blank space that holds not tile. A legal move consists of sliding a tile into the blank space if the tile is adjacent to it. The goal is to move tiles around until the board looks like the final state below.</string>
+    <string name="eight_start">Begin 8-Puzzle Problem</string>
+    <string name="eight_initial">+---+---+---+\n| 2 | 8 | 3 |\n+---+---+---+\n| 1 | 6 | 4 |\n+---+---+---+\n| 7 | \t\t | 5 |\n+---+---+---+</string>
+    <string name="eight_final">+---+---+---+\n| 1 | 2 | 3 |\n+---+---+---+\n| 8 | \t\t | 4 |\n+---+---+---+\n| 7 | 6 | 5 |\n+---+---+---+</string>
+    <string name="eight_header">8-Puzzle</string>
+
+    <string name="fifteen_greeting">Welcome to the 15-Puzzle Problem</string>
+    <string name="fifteen_instructions">You are given a board in which numbered tiles can slide around. There is one blank space that holds not tile. A legal move consists of sliding a tile into the blank space if the tile is adjacent to it. The goal is to move tiles around until the board looks like the final state below.</string>
+    <string name="fifteen_start">Begin 15-Puzzle Problem</string>
+    <string name="fifteen_initial">+---+---+---+---+\n| 5 | 1 | 2 | 3 |\n+---+---+---+---+\n| 6 | \t \t| 7 | 4 |\n+---+---+---+---+\n| 9 |10 |11 | 8 |\n+---+---+---+---+\n|13 |14 |15 |12 |\n+---+---+---+---+</string>
+    <string name="fifteen_final">+---+---+---+---+\n| 1 | 2 | 3 | 4 |\n+---+---+---+---+\n| 5 | 6 | 7 | 8 |\n+---+---+---+---+\n| 9 |10 |11 |12 |\n+---+---+---+---+\n|13 |14 |15 | \t\t |\n+---+---+---+---+</string>
+
+    <string name="illegal_move">ILLEGAL MOVE</string>
+    <string name="congrats">CONGRATS, YOU SOLVED THE PUZZLE!</string>
+
+</resources>

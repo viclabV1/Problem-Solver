@@ -1,0 +1,39 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/subtle_purple</item>
+        <item name="colorPrimaryDark">@color/abs_black</item>
+        <item name="colorAccent">@color/neon_pink</item>
+    </style>
+
+
+    <style name="TitleTextStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/abs_black</item>
+    </style>
+
+    <style name="InstructionStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/abs_black</item>
+    </style>
+
+    <style name="MediumMono">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@color/mono_background</item>
+    </style>
+
+    <style name="MessageStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/message_color</item>
+    </style>
+</resources>

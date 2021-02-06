@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Fifteen_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cosmic_latte"
+    tools:context=".FifteenProblemActivity">
+
+    <TextView
+        android:id="@+id/FifteenMoveCountHeader"
+        style="@style/InstructionStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:text="@string/moves"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FifteenNextButton" />
+
+    <TextView
+        android:id="@+id/FifteenCurrentStateHeader"
+        style="@style/InstructionStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/fwgc_currentstate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/FifteenCurrentState"
+        style="@style/MediumMono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/fifteen_initial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FifteenCurrentStateHeader" />
+
+    <TextView
+        android:id="@+id/FifteenFinalStateHeader"
+        style="@style/InstructionStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/fwgc_finalstate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FifteenCurrentState" />
+
+    <TextView
+        android:id="@+id/FifteenFinalState"
+        style="@style/MediumMono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/fifteen_final"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FifteenFinalStateHeader" />
+
+
+    <Button
+        android:id="@+id/FifteenResetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="56dp"
+        android:onClick="reset"
+        android:text="@string/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifteenspinner" />
+
+    <Button
+        android:id="@+id/FifteenSolveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:onClick="solve"
+        android:text="@string/solve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FifteenResetButton" />
+
+    <Button
+        android:id="@+id/FifteenNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:onClick="nextAction"
+        android:text="@string/next_move"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FifteenSolveButton" />
+
+    <TextView
+        android:id="@+id/FifteenMoveCount"
+        style="@style/MediumMono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FifteenMoveCountHeader" />
+
+    <TextView
+        android:id="@+id/FifteenStatisticsHeader"
+        style="@style/InstructionStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:text="@string/statistics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FifteenMoveCount" />
+
+    <TextView
+        android:id="@+id/FifteenBenchmarkHeader"
+        style="@style/InstructionStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="72dp"
+        android:text="@string/benchmark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/FifteenStatistics"
+        style="@style/MediumMono"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_marginEnd="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FifteenStatisticsHeader" />
+
+    <Spinner
+        android:id="@+id/fifteenspinner"
+        android:layout_width="190dp"
+        android:layout_height="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FifteenBenchmarkHeader" />
+
+    <TextView
+        android:id="@+id/fifteensolve_message"
+        style="@style/MessageStyle"
+        android:layout_width="144dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FifteenFinalState" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
