@@ -38,7 +38,7 @@ public class FifteenProblem extends Problem{
         super.addBenchmark(new Benchmark("15-Puz 5", 42, BENCH5, GOAL));
         super.addBenchmark(new Benchmark("15-Puz 6", 44, BENCH6, GOAL));
         super.addBenchmark(new Benchmark("15-Puz 7", 50, BENCH7, GOAL));
-        super.addBenchmark(new Benchmark("15-Puz 8", 54, BENCH8, GOAL));
+        //super.addBenchmark(new Benchmark("15-Puz 8", 54, BENCH8, GOAL));
     
     }
     

@@ -2,6 +2,7 @@
     <string name="app_name">Problem Solver</string>
     <string name="app_greeting">Welcome to the Problem Solver</string>
     <string name="app_instruction">Please choose a problem:</string>
+    <string name="app_explanation">In this app, the user can solve three different types of puzzles with different starting configurations. This app mainly serves to demonstrate the A* state-space search algorithm. Tap "Solve" at any point to have the app solve the problem and walk you through each step. Statistics on the solution are shown at the bottom.</string>
     <string name="fwgc_button">FWGC</string>
     <string name="eightPuzzle_button">8 Puzzle</string>
     <string name="beginProblem_button">Begin Problem</string>

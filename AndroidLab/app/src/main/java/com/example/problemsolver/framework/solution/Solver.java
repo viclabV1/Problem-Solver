@@ -129,7 +129,7 @@ public abstract class Solver {
         Date before = new Date();
         Vertex goal = search(current);     
         Date after = new Date();
-        statistics.putStat(VERTICES, vertices.size());
+        //statistics.putStat(VERTICES, vertices.size());
         statistics.putStat(TIME, (int)(after.getTime() - before.getTime()));
         if (goal != null) {
             solution = new Solution(current, goal);  
@@ -173,12 +173,15 @@ public abstract class Solver {
         s.setPredecessor(null);
         getQueue().clear();
         add(s);
+        getStatistics().incrStat(VERTICES);
         getStatistics().incrStat(NUM_OPS);
         getStatistics().incrStat(QUEUE_SIZE);
         vertices.clear();
         vertices.put(s, s);
+        getStatistics().incrStat(VERTICES);
         while(!getQueue().isEmpty()){
             Vertex thisVertex = queue.remove();
+
             getStatistics().incrStat(NUM_OPS);
             getStatistics().putStat(QUEUE_SIZE, getStatistics().getStat(QUEUE_SIZE)-1);
             if(isFinal(thisVertex)){
@@ -186,14 +189,17 @@ public abstract class Solver {
             }
         expand(thisVertex).forEach((Vertex vtx)->{if(!vertices.containsKey(vtx)){
                                                     vertices.put(vtx, vtx);
+                                                    getStatistics().incrStat(VERTICES);
                                                     vtx.setDistance(thisVertex.getDistance()+1);
                                                     vtx.setPredecessor(thisVertex);
                                                     add(vtx);
+
                                                     getStatistics().incrStat(NUM_OPS);
                                                     getStatistics().incrStat(QUEUE_SIZE);
                                                   }
                                                 else{
                                                     getStatistics().incrStat(CIRCULARITIES);
+                                                    getStatistics().incrStat(VERTICES);
 
                                                 } 
                                                 }
