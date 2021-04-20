@@ -28,7 +28,7 @@ public class FWGCProblemActivity extends AppCompatActivity {
         finalView = (TextView) findViewById(R.id.FWGCFinalState);
         message = (TextView) findViewById(R.id.fwgcsolve_message);
         count = (TextView) findViewById(R.id.FWGCMoveCount);
-        statistics = (TextView) findViewById(R.id.FWGCStatistics);
+        //statistics = (TextView) findViewById(R.id.FWGCStatistics);
         solveAssistant = new SolvingAssistant(problem);
         solver = new AStarSolver(problem);
         next = (Button) findViewById(R.id.FWGCNextButton);
@@ -36,10 +36,10 @@ public class FWGCProblemActivity extends AppCompatActivity {
         moveButtons = (LinearLayout) findViewById(R.id.FWGCMoveButtons);
         createMoveButtons();
         count.setText("0");
-        statistics.setText("No stats yet");
+        //statistics.setText("No stats yet");
         currentView.setText(problem.getInitialState().toString());
         finalView.setText(problem.getFinalState().toString());
-        statistics.setText(solver.getStatistics().toString());
+        //statistics.setText(solver.getStatistics().toString());
         message.setText(" ");
         next.setEnabled(false);
         intCount = 0;
@@ -51,7 +51,7 @@ public class FWGCProblemActivity extends AppCompatActivity {
             next.setEnabled(false);
         }
         currentView.setText(problem.getCurrentState().toString());
-        statistics.setText(solver.getStatistics().toString());
+        //statistics.setText(solver.getStatistics().toString());
     }
 
     public void reset(View view){

@@ -34,17 +34,17 @@ public class FifteenProblemActivity extends AppCompatActivity {
         finalView = (TextView) findViewById(R.id.FifteenFinalState);
         message = (TextView) findViewById(R.id.fifteensolve_message);
         count = (TextView) findViewById(R.id.FifteenMoveCount);
-        statistics = (TextView) findViewById(R.id.FifteenStatistics);
+        //statistics = (TextView) findViewById(R.id.FifteenStatistics);
         solveAssistant = new SolvingAssistant(problem);
         solver = new AStarSolver(problem);
         next = (Button) findViewById(R.id.FifteenNextButton);
         solveButton = (Button) findViewById(R.id.FifteenSolveButton);
         benchSpinner = (Spinner) findViewById(R.id.fifteenspinner);
         count.setText("0");
-        statistics.setText("No stats yet");
+        //statistics.setText("No stats yet");
         currentView.setText(problem.getInitialState().toString());
         finalView.setText(problem.getFinalState().toString());
-        statistics.setText(solver.getStatistics().toString());
+        //statistics.setText(solver.getStatistics().toString());
         message.setText(" ");
         next.setEnabled(false);
         intCount = 0;
@@ -60,7 +60,7 @@ public class FifteenProblemActivity extends AppCompatActivity {
             next.setEnabled(false);
         }
         currentView.setText(problem.getCurrentState().toString());
-        statistics.setText(solver.getStatistics().toString());
+        //statistics.setText(solver.getStatistics().toString());
     }
 
     public void reset(View view) {

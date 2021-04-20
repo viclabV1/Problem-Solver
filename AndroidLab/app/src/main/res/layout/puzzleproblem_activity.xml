@@ -112,16 +112,6 @@
         app:layout_constraintTop_toBottomOf="@+id/PuzzleMoveCountHeader" />
 
     <TextView
-        android:id="@+id/PuzzleStatisticsHeader"
-        style="@style/InstructionStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:text="@string/statistics"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PuzzleMoveCount" />
-
-    <TextView
         android:id="@+id/PuzzleBenchmarkHeader"
         style="@style/InstructionStyle"
         android:layout_width="wrap_content"
@@ -131,16 +121,6 @@
         android:text="@string/benchmark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/PuzzleStatistics"
-        style="@style/MediumMono"
-        android:layout_width="208dp"
-        android:layout_height="148dp"
-        android:layout_marginStart="30dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PuzzleStatisticsHeader" />
 
     <Spinner
         android:id="@+id/puzzlespinner"

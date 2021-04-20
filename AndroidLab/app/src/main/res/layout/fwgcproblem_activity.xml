@@ -113,26 +113,6 @@
         app:layout_constraintTop_toBottomOf="@+id/FWGCMoveCountHeader" />
 
     <TextView
-        android:id="@+id/FWGCStatisticsHeader"
-        style="@style/InstructionStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:text="@string/statistics"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FWGCMoveCount" />
-
-    <TextView
-        android:id="@+id/FWGCStatistics"
-        style="@style/MediumMono"
-        android:layout_width="173dp"
-        android:layout_height="174dp"
-        android:layout_marginStart="30dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FWGCStatisticsHeader" />
-
-    <TextView
         android:id="@+id/fwgcsolve_message"
         style="@style/MessageStyle"
         android:layout_width="187dp"

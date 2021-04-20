@@ -34,7 +34,7 @@ public class PuzzleProblemActivity extends AppCompatActivity {
         finalView = (TextView) findViewById(R.id.PuzzleFinalState);
         message = (TextView) findViewById(R.id.puzzlesolve_message);
         count = (TextView) findViewById(R.id.PuzzleMoveCount);
-        statistics = (TextView) findViewById(R.id.PuzzleStatistics);
+        //statistics = (TextView) findViewById(R.id.PuzzleStatistics);
         solveAssistant = new SolvingAssistant(problem);
         solver = new AStarSolver(problem);
         next = (Button) findViewById(R.id.PuzzleNextButton);
@@ -43,10 +43,10 @@ public class PuzzleProblemActivity extends AppCompatActivity {
         benchSpinner = (Spinner) findViewById(R.id.puzzlespinner);
         createMoveButtons();
         count.setText("0");
-        statistics.setText("No stats yet");
+        //statistics.setText("No stats yet");
         currentView.setText(problem.getInitialState().toString());
         finalView.setText(problem.getFinalState().toString());
-        statistics.setText(solver.getStatistics().toString());
+        //statistics.setText(solver.getStatistics().toString());
         message.setText(" ");
         next.setEnabled(false);
         intCount = 0;
@@ -62,7 +62,7 @@ public class PuzzleProblemActivity extends AppCompatActivity {
             next.setEnabled(false);
         }
         currentView.setText(problem.getCurrentState().toString());
-        statistics.setText(solver.getStatistics().toString());
+        //statistics.setText(solver.getStatistics().toString());
     }
 
     public void reset(View view){

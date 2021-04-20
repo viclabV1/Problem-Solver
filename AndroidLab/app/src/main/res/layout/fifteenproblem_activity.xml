@@ -105,16 +105,6 @@
         app:layout_constraintTop_toBottomOf="@+id/FifteenMoveCountHeader" />
 
     <TextView
-        android:id="@+id/FifteenStatisticsHeader"
-        style="@style/InstructionStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
-        android:text="@string/statistics"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FifteenMoveCount" />
-
-    <TextView
         android:id="@+id/FifteenBenchmarkHeader"
         style="@style/InstructionStyle"
         android:layout_width="wrap_content"
@@ -124,16 +114,6 @@
         android:text="@string/benchmark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/FifteenStatistics"
-        style="@style/MediumMono"
-        android:layout_width="192dp"
-        android:layout_height="192dp"
-        android:layout_marginEnd="16dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FifteenStatisticsHeader" />
 
     <Spinner
         android:id="@+id/fifteenspinner"
